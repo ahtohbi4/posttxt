@@ -1,0 +1,20 @@
+{
+  "name": "posttxt",
+  "version": "0.0.1",
+  "description": "PostTXT ==",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahtohbi4/posttxt.git"
+  },
+  "keywords": [],
+  "author": "Alexandr Antonov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahtohbi4/posttxt/issues"
+  },
+  "homepage": "https://github.com/ahtohbi4/posttxt#readme"
+}
