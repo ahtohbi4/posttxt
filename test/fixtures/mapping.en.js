@@ -24,79 +24,79 @@ const RESULT = {
                             type: 'word',
                             value: 'Lorem',
                             before: '\n\n',
-                            after: ' ',
+                            after: ' '
                         },
                         {
                             type: 'punctuation',
                             value: '"',
                             before: ' ',
-                            after: '',
+                            after: ''
                         },
                         {
                             type: 'word',
                             value: 'ipsum',
                             before: '',
-                            after: '',
+                            after: ''
                         },
                         {
                             type: 'punctuation',
                             value: '"',
                             before: '',
-                            after: ' ',
+                            after: ' '
                         },
                         {
                             type: 'word',
                             value: 'dolor',
                             before: ' ',
-                            after: ' ',
+                            after: ' '
                         },
                         {
                             type: 'word',
                             value: 'sit',
                             before: ' ',
-                            after: ' ',
+                            after: ' '
                         },
                         {
                             type: 'word',
                             value: 'amet',
                             before: ' ',
-                            after: ' ',
+                            after: ' '
                         },
                         {
                             type: 'punctuation',
                             value: ',',
                             before: '',
-                            after: ' ',
+                            after: ' '
                         },
                         {
                             type: 'word',
                             value: 'consectetur',
                             before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'symbol',
+                            value: '$',
+                            after: '',
+                            before: ' '
+                        },
+                        {
+                            type: 'number',
+                            value: '5,000.12',
                             after: ' ',
-                        },
-                        {
-                            "type": "symbol",
-                            "value": "$",
-                            "after": "",
-                            "before": " "
-                        },
-                        {
-                            "type": "number",
-                            "value": "5,000.12",
-                            "after": " ",
-                            "before": ""
+                            before: ''
                         },
                         {
                             type: 'word',
                             value: 'elit',
                             before: ' ',
-                            after: ' ',
+                            after: ' '
                         },
                         {
                             type: 'punctuation',
                             value: '.',
                             before: '',
-                            after: ' ',
+                            after: ' '
                         }
                     ]
                 },
@@ -156,7 +156,6 @@ const RESULT = {
                         }
                     ]
                 }
-            ]
             ]
         },
         {
@@ -254,6 +253,7 @@ const RESULT = {
                             value: '.',
                             before: '',
                             after: '  '
+                        }
                     ]
                 },
                 {
@@ -471,5 +471,5 @@ const RESULT = {
 
 module.exports = {
     source: SOURCE,
-    resoult: RESULT
+    result: RESULT
 };
