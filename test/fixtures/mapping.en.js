@@ -1,7 +1,7 @@
 const SOURCE = `
 Lorem "ipsum" dolor sit amet, consectetur $5,000.12 elit. Suspendisse eleifend - nec sapien % blandit.
 
-Nunc: dolor' quam, molestie (non facilisis) alex@example.com placerat. Aliquam “vitae ” magna in nunc’s suscipit male_s_uada…
+Nunc: dolor' quam, molestie (non facilisis) alex@example.com placerat.  Aliquam “vitae ” magna in nunc’s suscipit male_s_uada…
 
 Vivamus ‘sollicitudin’ dolor & ex? Eget ultrices! Dolor 25/17 auctor gravida...`;
 
@@ -161,17 +161,310 @@ const RESULT = {
         },
         {
             type: 'paragraph',
-            value: `Nunc: dolor' quam, molestie (non facilisis) alex@example.com placerat. Aliquam “vitae ” magna in nunc’s suscipit male_s_uada…`,
+            value: `Nunc: dolor' quam, molestie (non facilisis) alex@example.com placerat.  Aliquam “vitae ” magna in nunc’s suscipit male_s_uada…`,
             before: '\n\n',
             after: '\n\n',
-            nodes: []
+            nodes: [
+                {
+                    type: 'sentence',
+                    value: `Nunc: dolor' quam, molestie (non facilisis) alex@example.com placerat.`,
+                    before: '\n\n',
+                    after: '  ',
+                    nodes: [
+                        {
+                            type: 'word',
+                            value: 'Nunc',
+                            before: '\n\n',
+                            after: ''
+                        },
+                        {
+                            type: 'punctuation',
+                            value: ':',
+                            before: '',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'dolor',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '\'',
+                            before: '',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'quam',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'punctuation',
+                            value: ',',
+                            before: '',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'molestie',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '(',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'word',
+                            value: 'non',
+                            before: '',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'facilisis',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'punctuation',
+                            value: ')',
+                            before: '',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'alex@example.com',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'placerat',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '.',
+                            before: '',
+                            after: '  '
+                    ]
+                },
+                {
+                    type: 'sentence',
+                    value: `Aliquam “vitae ” magna in nunc’s suscipit male_s_uada…`,
+                    before: '  ',
+                    after: '\n\n',
+                    nodes: [
+                        {
+                            type: 'word',
+                            value: 'Aliquam',
+                            before: '  ',
+                            after: ' '
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '“',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'word',
+                            value: 'vitae',
+                            before: '',
+                            after: ' '
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '”',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'word',
+                            value: 'magna',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'in',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'nunc’s',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'suscipit',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'male_s_uada',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '…',
+                            before: '',
+                            after: '\n\n'
+                        }
+                    ]
+                }
+            ]
         },
         {
             type: 'paragraph',
             value: 'Vivamus ‘sollicitudin’ dolor & ex? Eget ultrices! Dolor 25/17 auctor gravida...',
             before: '\n\n',
             after: '',
-            nodes: []
+            nodes: [
+                {
+                    type: 'sentence',
+                    value: 'Vivamus ‘sollicitudin’ dolor & ex?',
+                    before: '\n\n',
+                    after: ' ',
+                    nodes: [
+                        {
+                            type: 'word',
+                            value: 'Vivamus',
+                            before: '\n\n',
+                            after: ' '
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '‘',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'word',
+                            value: 'sollicitudin',
+                            before: '',
+                            after: ''
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '’',
+                            before: '',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'dolor',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'symbol',
+                            value: '&',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'ex',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '?',
+                            before: '',
+                            after: ' '
+                        }
+                    ]
+                },
+                {
+                    type: 'sentence',
+                    value: 'Eget ultrices!',
+                    before: ' ',
+                    after: ' ',
+                    nodes: [
+                        {
+                            type: 'word',
+                            value: 'Eget',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'ultrices',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '!',
+                            before: '',
+                            after: ' '
+                        }
+                    ]
+                },
+                {
+                    type: 'sentence',
+                    value: 'Dolor 25/17 auctor gravida...',
+                    before: ' ',
+                    after: '',
+                    nodes: [
+                        {
+                            type: 'word',
+                            value: 'Dolor',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'number',
+                            value: '25',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'symbol',
+                            value: '/',
+                            before: '',
+                            after: ''
+                        },
+                        {
+                            type: 'number',
+                            value: '17',
+                            before: '',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'auctor',
+                            before: ' ',
+                            after: ' '
+                        },
+                        {
+                            type: 'word',
+                            value: 'gravida',
+                            before: ' ',
+                            after: ''
+                        },
+                        {
+                            type: 'punctuation',
+                            value: '...',
+                            before: '',
+                            after: ''
+                        }
+                    ]
+                }
+            ]
         }
     ]
 };
