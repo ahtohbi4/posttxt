@@ -1,3 +1,8 @@
+/**
+ * Source text in English
+ *
+ * @type {string}
+ */
 const SOURCE = `
 Lorem "ipsum" dolor sit amet, consectetur $5,000.12 elit. Suspendisse eleifend - nec sapien % blandit.
 
@@ -5,6 +10,11 @@ Nunc: dolor' quam, molestie (non facilisis) alex@example.com placerat.  Aliquam 
 
 Vivamus ‘sollicitudin’ dolor & ex? Eget ultrices! Dolor 25/17 auctor gravida...`;
 
+/**
+ * Result object from SOURCE
+ *
+ * @type {object}
+ */
 const RESULT = {
     type: 'root',
     nodes: [
